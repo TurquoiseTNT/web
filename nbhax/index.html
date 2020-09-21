@@ -35,7 +35,7 @@
 			var supported_versions=["1.7636","1.10.10166"];
 			var out = "";
 
-			if (uagent.indexOf("New Nintendo 3DS") != -1)
+			if (uagent.indexOf("Hello New Nintendo 3DS User!") != -1)
 			{
 				system = 2;
 				slash=uagent.lastIndexOf("/");
@@ -61,7 +61,7 @@
 				system = 0;
 				out = "Unsupported device<br>";
 				if (uagent == mobile) {
-					out = 'Please uncheck "Request Mobile Sites" in the Menu tab (bottom right corner)<br>';
+					out = 'Oh No! NBhax needs to be out of mobile version.<br>';
 				}
 			}
 
@@ -80,7 +80,7 @@
 				}
 			}
 			document.getElementById("output").innerHTML = out+"<br><br><br>";
-			if(system==0) document.getElementById("button").innerHTML = "I AM ERROR";
+			if(system==0) document.getElementById("button").innerHTML = "Proceed to NBhax";
 		}
 		function go() {
 			if (system == 1) {
@@ -102,7 +102,7 @@
 				window.location.href = "twn_obhax.html";
 			}
 			else {
-				document.getElementById("output").innerHTML = "WHAT IS WRONG WITH THE ELF<br><br><br><br>";
+				document.getElementById("output").innerHTML = "NO. THIS DOES NOT WORK LIKE THIS!<br><br><br><br>";
 			}
 		}
 	</script>
